@@ -2,17 +2,12 @@ import React, {useState} from 'react'
 import Affairs from './Affairs'
 
 // types
-export type AffairPriorityType = string // need to fix any
-export type AffairType = {
-    _id: number
-    name: string
-    priority: string
-} // need to fix any
+export type AffairPriorityType = any // need to fix any
+export type AffairType = any // need to fix any
 export type FilterType = 'all' | AffairPriorityType
 
-// type typeListQuestions = Array<typeQuest>
 // constants
-const defaultAffairs: Array<AffairType> = [ // need to fix any
+const defaultAffairs: any = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
@@ -21,18 +16,9 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any
 ]
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: string): Array<AffairType> => { // need to fix any
-    switch (filter) {
-        case 'all':
-            return affairs
-        case 'low':
-            return affairs.filter(x=>x.priority==='low')
-        default:
-            return affairs
-    }
-    // if (filter === 'all') return affairs
-    //     else if () return
-    // else return affairs// need to fix
+export const filterAffairs = (affairs: any, filter: any): any => { // need to fix any
+    if (filter === 'all') return affairs
+    else return // need to fix
 }
 export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
     return // need to fix
@@ -44,7 +30,7 @@ function HW2() {
 
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: any) => setAffairs(deleteAffair(affairs, _id)) // need to fix any
-console.log('HW2')
+
     return (
         <div>
             <hr/>
