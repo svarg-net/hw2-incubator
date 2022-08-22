@@ -1,0 +1,63 @@
+.messageBlock {
+    background: #a9e800;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.block {
+    flex-grow: 6;
+    padding: 20px 40px;
+}
+
+.block_right {
+    flex-grow: 1;
+
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 80px;
+    float: right
+}
+
+.block_left {
+    flex-grow: 4;
+    background: #002200;
+    position: relative;
+}
+
+.name {
+    color: #a195cb;
+}
+
+.message {
+    color: #a4bba0;
+}
+
+.time {
+    color: #315332;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    float: right;
+}
+
+.triangleWrapper {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    width: 40px;
+    height: 40px;
+    /* border-bottom: 20px solid red; */
+    /* border-left: 20px solid transparent; */
+    background: #020;
+}
+
+.triangle{
+    height: 40px;
+    border-bottom-right-radius: 100%;
+    background: #a9e800;
+    width: 40px;
+}
